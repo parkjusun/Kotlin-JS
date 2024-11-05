@@ -14,8 +14,8 @@ fun main() {
     print("Please enter the second number : ")
     val secondNum: Int = sc.nextInt()
 
-    println("sum : $firstNum + $secondNum = " + sum(firstNum, secondNum))
-    println("subtraction : $firstNum - $secondNum = " + subtraction(firstNum, secondNum))
-    println("multiply : $firstNum * $secondNum = " + multiply(firstNum, secondNum))
-    println("divide : $firstNum / $secondNum = " + divide(firstNum, secondNum))
+    println("sum : $firstNum + $secondNum = ${sum(firstNum, secondNum)}")
+    println("subtraction : $firstNum - $secondNum = ${subtraction(firstNum, secondNum)}")
+    println("multiply : $firstNum * $secondNum =  ${multiply(firstNum, secondNum)}")
+    println("divide : $firstNum / $secondNum = ${divide(firstNum, secondNum)}")
 }
