@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="414d356a-428b-4a15-a9bb-95805667fb3c" name="Changes" comment="Calculate Create">
+    <list default="true" id="414d356a-428b-4a15-a9bb-95805667fb3c" name="Changes" comment="코틀린의 특별한 기능&#10;&#10;- 타입 추론: 변수와 함수의 반환 타입을 자동으로 추론한다.&#10;- 문자열 템플릿: 문자열 내에 변수나 표현식을 쉽게 삽입할 수 있다.">
+      <change afterPath="$PROJECT_DIR$/src/Person.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculate.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +15,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,6 +39,7 @@
   "keyToString": {
     "Kotlin.CalculateKt.executor": "Debug",
     "Kotlin.MainKt.executor": "Debug",
+    "Kotlin.PersonKt.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -43,7 +51,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.PersonKt">
     <configuration name="CalculateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CalculateKt" />
       <module name="Kotlin-JS" />
@@ -51,8 +59,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PersonKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PersonKt" />
+      <module name="Kotlin-JS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.PersonKt" />
         <item itemvalue="Kotlin.CalculateKt" />
       </list>
     </recent_temporary>
@@ -73,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730776663410</updated>
-      <workItem from="1730776664389" duration="1719000" />
+      <workItem from="1730776664389" duration="5091000" />
     </task>
     <task id="LOCAL-00001" summary="Calculate Create">
       <option name="closed" value="true" />
@@ -83,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730777777254</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="코틀린의 특별한 기능&#10;&#10;- 타입 추론: 변수와 함수의 반환 타입을 자동으로 추론한다.&#10;- 문자열 템플릿: 문자열 내에 변수나 표현식을 쉽게 삽입할 수 있다.">
+      <option name="closed" value="true" />
+      <created>1730778673379</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730778673379</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +126,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Calculate Create" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calculate Create" />
+    <MESSAGE value="코틀린의 특별한 기능&#10;&#10;- 타입 추론: 변수와 함수의 반환 타입을 자동으로 추론한다.&#10;- 문자열 템플릿: 문자열 내에 변수나 표현식을 쉽게 삽입할 수 있다." />
+    <option name="LAST_COMMIT_MESSAGE" value="코틀린의 특별한 기능&#10;&#10;- 타입 추론: 변수와 함수의 반환 타입을 자동으로 추론한다.&#10;- 문자열 템플릿: 문자열 내에 변수나 표현식을 쉽게 삽입할 수 있다." />
   </component>
 </project>
