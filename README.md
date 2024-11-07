@@ -53,3 +53,73 @@ when은 enum 클래스뿐만 아니라 다양한 타입과 조건에 사용할 �
 코틀린의 스마트 캐스트 기능은 타입 검사와 캐스팅을 자동으로 수행한다.
 
 이러한 기능들을 통해 코틀린은 더 간결하고 안전한 코드 작성을 가능하게 한다.
+
+---
+# 코틀린의 반복문
+
+코틀린의 반복문은 Java와 유사한 구조를 가진다. 특히 while 문은 거의 동일한 형태를 보인다. 코틀린에서는 주로 while, do-while, 그리고 for 문을 사용하여 반복 작업을 수행한다.
+
+## while과 do-while 반복문
+
+while과 do-while 문의 기본 구조는 다음과 같다:
+
+```kotlin
+while (조건) {
+    // 코드 블록
+}
+
+do {
+    // 코드 블록
+} while (조건)
+```
+
+## for 반복문
+
+코틀린의 for 문은 범위(range)를 사용하여 반복을 수행한다. 다음은 for 문의 예시이다:
+
+```kotlin
+fun main() {
+    // 1부터 100까지 반복
+    for (i in 1..100) {
+        println(if (i % 2 == 0) "짝수" else "홀수")
+    }
+
+    // 100부터 1까지 3씩 감소하며 반복
+    for (i in 100 downTo 1 step 3) {
+        println(if (i % 2 == 0) "짝수" else "홀수")
+    }
+}
+```
+
+기본적으로 'i in 1..100'은 양쪽 끝을 포함한다. 마지막 숫자를 제외하려면 'until' 키워드를 사용할 수 있다.
+
+## 컬렉션과 맵의 반복
+
+코틀린에서는 컬렉션과 맵을 쉽게 순회할 수 있다. 다음은 맵을 사용한 예시이다:
+
+```kotlin
+val students = mutableMapOf(1 to "Alice", 2 to "Bob", 3 to "Charlie")
+
+for ((num, name) in students) {
+    println("번호: $num, 이름: $name")
+}
+```
+
+여기서 '(num, name) in students'는 맵의 키-값 쌍을 분해하여 각각의 변수에 할당하는 구조 분해 선언을 사용한다.
+
+## 범위 검사
+
+코틀린에서는 'in' 키워드를 사용하여 값이 특정 범위 내에 있는지 쉽게 확인할 수 있다:
+
+```kotlin
+fun isLetter(c: Char) = c in 'a'..'z' || c in 'A'..'Z'
+fun isDigit(c: Char) = c in '0'..'9'
+
+fun recognize(c: Char) = when(c) {
+    in '0'..'9' -> "숫자"
+    in 'a'..'z', in 'A'..'Z' -> "알파벳"
+    else -> "기타 문자"
+}
+```
+
+이러한 범위 검사는 내부적으로 'a ≤ x ≤ b'와 같은 비교 연산으로 변환된다.
