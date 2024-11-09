@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="414d356a-428b-4a15-a9bb-95805667fb3c" name="Changes" comment="스마트캐스트">
-      <change afterPath="$PROJECT_DIR$/src/Iteration.kt" afterDir="false" />
+    <list default="true" id="414d356a-428b-4a15-a9bb-95805667fb3c" name="Changes" comment="# 코틀린의 반복문&#10;&#10;코틀린의 반복문은 Java와 유사한 구조를 가진다. 특히 while 문은 거의 동일한 형태를 보인다. 코틀린에서는 주로 while, do-while, 그리고 for 문을 사용하여 반복 작업을 수행한다.&#10;&#10;## while과 do-while 반복문&#10;&#10;## for 반복문&#10;&#10;코틀린의 for 문은 범위(range)를 사용하여 반복을 수행한다.&#10;&#10;기본적으로 'i in 1..100'은 양쪽 끝을 포함한다. 마지막 숫자를 제외하려면 'until' 키워드를 사용할 수 있다.&#10;&#10;컬렉션과 맵의 반복&#10;&#10;코틀린에서는 컬렉션과 맵을 쉽게 순회할 수 있다. &#10;'(num, name) in students'는 맵의 키-값 쌍을 분해하여 각각의 변수에 할당하는 구조 분해 선언을 사용한다.&#10;&#10;범위 검사&#10;&#10;코틀린에서는 'in' 키워드를 사용하여 값이 특정 범위 내에 있는지 쉽게 확인할 수 있다.&#10;&#10;이러한 범위 검사는 내부적으로 'a ≤ x ≤ b'와 같은 비교 연산으로 변환된다.">
+      <change afterPath="$PROJECT_DIR$/src/Exception.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -40,12 +40,14 @@
   "keyToString": {
     "Kotlin.CalculateKt.executor": "Debug",
     "Kotlin.ColorKt.executor": "Debug",
+    "Kotlin.ExceptionKt.executor": "Debug",
     "Kotlin.IterationKt.executor": "Debug",
     "Kotlin.MainKt.executor": "Debug",
     "Kotlin.PersonKt.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/bagjuseon/Project/Kotlin-JS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,7 +57,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.IterationKt">
+  <component name="RunManager" selected="Kotlin.ExceptionKt">
     <configuration name="CalculateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CalculateKt" />
       <module name="Kotlin-JS" />
@@ -65,6 +67,13 @@
     </configuration>
     <configuration name="ColorKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ColorKt" />
+      <module name="Kotlin-JS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExceptionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExceptionKt" />
       <module name="Kotlin-JS" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -86,6 +95,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ExceptionKt" />
         <item itemvalue="Kotlin.IterationKt" />
         <item itemvalue="Kotlin.ColorKt" />
         <item itemvalue="Kotlin.PersonKt" />
@@ -112,7 +122,9 @@
       <workItem from="1730776664389" duration="5917000" />
       <workItem from="1730851440869" duration="509000" />
       <workItem from="1730871739901" duration="2330000" />
-      <workItem from="1730938181331" duration="2334000" />
+      <workItem from="1730938181331" duration="2922000" />
+      <workItem from="1731035286177" duration="62000" />
+      <workItem from="1731111860630" duration="1935000" />
     </task>
     <task id="LOCAL-00001" summary="Calculate Create">
       <option name="closed" value="true" />
@@ -162,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730873419022</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="# 코틀린의 반복문&#10;&#10;코틀린의 반복문은 Java와 유사한 구조를 가진다. 특히 while 문은 거의 동일한 형태를 보인다. 코틀린에서는 주로 while, do-while, 그리고 for 문을 사용하여 반복 작업을 수행한다.&#10;&#10;## while과 do-while 반복문&#10;&#10;## for 반복문&#10;&#10;코틀린의 for 문은 범위(range)를 사용하여 반복을 수행한다.&#10;&#10;기본적으로 'i in 1..100'은 양쪽 끝을 포함한다. 마지막 숫자를 제외하려면 'until' 키워드를 사용할 수 있다.&#10;&#10;컬렉션과 맵의 반복&#10;&#10;코틀린에서는 컬렉션과 맵을 쉽게 순회할 수 있다. &#10;'(num, name) in students'는 맵의 키-값 쌍을 분해하여 각각의 변수에 할당하는 구조 분해 선언을 사용한다.&#10;&#10;범위 검사&#10;&#10;코틀린에서는 'in' 키워드를 사용하여 값이 특정 범위 내에 있는지 쉽게 확인할 수 있다.&#10;&#10;이러한 범위 검사는 내부적으로 'a ≤ x ≤ b'와 같은 비교 연산으로 변환된다.">
+      <option name="closed" value="true" />
+      <created>1730950372742</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730950372742</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +205,8 @@
     <MESSAGE value="코틀린의 클래스와 객체&#10;코틀린에서는 클래스와 객체를 더욱 간결하고 효율적으로 정의한다. 이는 자바와 비교했을 때 큰 장점 중 하나이다.&#10;&#10;1. 클래스 정의의 간소화&#10;코틀린에서는 클래스를 정의할 때 생성자와 프로퍼티를 한 줄로 선언한다. 이는 자바에서 필요한 여러 줄의 코드를 대체한다.&#10;2. 프로퍼티 접근자&#10;코틀린은 기본적으로 getter와 setter를 자동으로 생성한다. 필요한 경우 커스텀 접근자를 정의할 수 있다.&#10;3. 패키지와 임포트&#10;코틀린의 패키지 선언과 임포트 문은 자바와 유사하지만, 최상위 함수의 임포트가 가능하다.&#10;4. 파일 구조의 유연성&#10;코틀린에서는 하나의 파일에 여러 클래스, 함수, 최상위 변수를 선언할 수 있어 관련 코드를 함께 관리하기 용이하다.&#10;이러한 특징들로 인해 코틀린은 더 간결하고 표현력 있는 코드 작성을 가능하게 한다." />
     <MESSAGE value="코틀린의 제어 구조와 표현식 처리&#10;&#10;코틀린은 강력한 제어 구조와 표현식 처리 기능을 제공한다. 특히 'when'과 'enum'은 매우 유용한 기능이다.&#10;&#10;enum 클래스&#10;&#10;enum 클래스는 상수 집합을 정의하는 데 사용한다. 코틀린의 enum은 자바와 유사하지만 더 많은 기능을 제공한다.&#10;&#10;when 표현식&#10;&#10;when은 코틀린의 강력한 제어 구조로, 자바의 switch문을 대체하고 확장한다.&#10;&#10;when은 enum 클래스뿐만 아니라 다양한 타입과 조건에 사용할 수 있다.&#10;&#10;스마트 캐스트&#10;&#10;코틀린의 스마트 캐스트 기능은 타입 검사와 캐스팅을 자동으로 수행한다.&#10;&#10;이러한 기능들을 통해 코틀린은 더 간결하고 안전한 코드 작성을 가능하게 한다." />
     <MESSAGE value="스마트캐스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="스마트캐스트" />
+    <MESSAGE value="# 코틀린의 반복문&#10;&#10;코틀린의 반복문은 Java와 유사한 구조를 가진다. 특히 while 문은 거의 동일한 형태를 보인다. 코틀린에서는 주로 while, do-while, 그리고 for 문을 사용하여 반복 작업을 수행한다.&#10;&#10;## while과 do-while 반복문&#10;&#10;## for 반복문&#10;&#10;코틀린의 for 문은 범위(range)를 사용하여 반복을 수행한다.&#10;&#10;기본적으로 'i in 1..100'은 양쪽 끝을 포함한다. 마지막 숫자를 제외하려면 'until' 키워드를 사용할 수 있다.&#10;&#10;컬렉션과 맵의 반복&#10;&#10;코틀린에서는 컬렉션과 맵을 쉽게 순회할 수 있다. &#10;'(num, name) in students'는 맵의 키-값 쌍을 분해하여 각각의 변수에 할당하는 구조 분해 선언을 사용한다.&#10;&#10;범위 검사&#10;&#10;코틀린에서는 'in' 키워드를 사용하여 값이 특정 범위 내에 있는지 쉽게 확인할 수 있다.&#10;&#10;이러한 범위 검사는 내부적으로 'a ≤ x ≤ b'와 같은 비교 연산으로 변환된다." />
+    <option name="LAST_COMMIT_MESSAGE" value="# 코틀린의 반복문&#10;&#10;코틀린의 반복문은 Java와 유사한 구조를 가진다. 특히 while 문은 거의 동일한 형태를 보인다. 코틀린에서는 주로 while, do-while, 그리고 for 문을 사용하여 반복 작업을 수행한다.&#10;&#10;## while과 do-while 반복문&#10;&#10;## for 반복문&#10;&#10;코틀린의 for 문은 범위(range)를 사용하여 반복을 수행한다.&#10;&#10;기본적으로 'i in 1..100'은 양쪽 끝을 포함한다. 마지막 숫자를 제외하려면 'until' 키워드를 사용할 수 있다.&#10;&#10;컬렉션과 맵의 반복&#10;&#10;코틀린에서는 컬렉션과 맵을 쉽게 순회할 수 있다. &#10;'(num, name) in students'는 맵의 키-값 쌍을 분해하여 각각의 변수에 할당하는 구조 분해 선언을 사용한다.&#10;&#10;범위 검사&#10;&#10;코틀린에서는 'in' 키워드를 사용하여 값이 특정 범위 내에 있는지 쉽게 확인할 수 있다.&#10;&#10;이러한 범위 검사는 내부적으로 'a ≤ x ≤ b'와 같은 비교 연산으로 변환된다." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
