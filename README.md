@@ -209,3 +209,29 @@ Pair, Triple, 또는 데이터 클래스의 속성을 개별 변수로 분해
 - internal: 같은 모듈 내에서만 접근 가능
 
 코틀린은 자바와 달리 기본 가시성이 public이며, 패키지 전용 가시성이 없습니다. 대신 모듈 내부에서만 볼 수 있는 internal 가시성을 제공합니다.
+---
+## 1. 봉인된 클래스 (Sealed Class)
+
+확장을 제한하여 편의성을 향상시키는 클래스 타입입니다. 컴파일러가 모든 하위 클래스를 알 수 있어 when 구문에서 else 분기가 불필요합니다.
+
+## 2. 생성자와 초기화
+
+- 주 생성자 (Primary Constructor): 클래스 선언 시 가장 간단한 형태로 사용
+- 초기화 블록 (Init Block): 객체 생성 시 프로퍼티 초기화에 사용
+- 부 생성자 (Secondary Constructor): 여러 생성자를 제공할 때 사용
+
+## 3. 프로퍼티와 접근자
+
+getter와 setter를 커스터마이징할 수 있으며, backing field를 통해 프로퍼티에 접근합니다. private set을 사용하여 setter의 가시성을 제한할 수 있습니다.
+
+## 4. Data Class
+
+데이터 저장 용도의 클래스로, toString(), equals(), hashCode() 등의 메서드를 자동으로 제공합니다.
+
+## 5. Object 키워드
+
+싱글톤 패턴을 구현하거나 익명 클래스를 생성할 때 사용합니다.
+
+## 6. Companion Object
+
+자바의 static 멤버를 대체하는 용도로 사용되며, 클래스 내부에 정의됩니다.
