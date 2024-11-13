@@ -3,6 +3,17 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c66c73a8-92b6-4f5e-805e-4a8684c24988" name="Changes" comment="## **봉인된 클래스**(sealed class)&#10;&#10;봉인된 클래스(sealed class)는 클래스의 확장을 의도적으로 제한함으로써 코드의 안정성과 가독성을 높이는 특별한 클래스 유형입니다.&#10;&#10;### 봉인된 클래스의 필요성&#10;&#10;일반적인 클래스 사용 시 다음과 같은 문제점들이 발생할 수 있습니다.&#10;&#10;- 불필요한 예외 처리 코드 작성&#10;- 컴파일러의 타입 추론 한계&#10;- 새로운 서브클래스 추가 시 광범위한 코드 수정 필요&#10;&#10;예를 들어, 오류 처리 시스템에 새로운 오류 유형을 추가할 경우, 관련된 모든 조건문을 수정해야 하며, 이 과정에서 실수로 일부를 누락하면 심각한 버그가 발생할 수 있습니다.">
+      <change afterPath="$PROJECT_DIR$/src/User.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="ComposerSettings">
     <execution />
   </component>
@@ -30,30 +41,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Kotlin.CalculateKt.executor&quot;: &quot;Debug&quot;,
-    &quot;Kotlin.ColorKt.executor&quot;: &quot;Debug&quot;,
-    &quot;Kotlin.ExceptionKt.executor&quot;: &quot;Debug&quot;,
-    &quot;Kotlin.ExtentionsKt.executor&quot;: &quot;Debug&quot;,
-    &quot;Kotlin.FunctionsKt.executor&quot;: &quot;Debug&quot;,
-    &quot;Kotlin.IterationKt.executor&quot;: &quot;Debug&quot;,
-    &quot;Kotlin.MainKt.executor&quot;: &quot;Debug&quot;,
-    &quot;Kotlin.PersonKt.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;jusun/extension&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bagjuseon/Project/Kotlin-JS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Kotlin.CalculateKt.executor": "Debug",
+    "Kotlin.ColorKt.executor": "Debug",
+    "Kotlin.ExceptionKt.executor": "Debug",
+    "Kotlin.ExtentionsKt.executor": "Debug",
+    "Kotlin.FunctionsKt.executor": "Debug",
+    "Kotlin.IterationKt.executor": "Debug",
+    "Kotlin.MainKt.executor": "Debug",
+    "Kotlin.PersonKt.executor": "Debug",
+    "Kotlin.UserKt.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/bagjuseon/Project/Kotlin-JS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Kotlin.SealedClassKt">
+}]]></component>
+  <component name="RunManager" selected="Kotlin.UserKt">
     <configuration name="ExceptionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ExceptionKt" />
       <module name="Kotlin-JS" />
@@ -75,13 +87,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IterationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IterationKt" />
-      <module name="Kotlin-JS" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SealedClassKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SealedClassKt" />
       <module name="Kotlin-JS" />
@@ -89,13 +94,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UserKt" />
+      <module name="Kotlin-JS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.UserKt" />
         <item itemvalue="Kotlin.SealedClassKt" />
         <item itemvalue="Kotlin.ExtentionsKt" />
         <item itemvalue="Kotlin.FunctionsKt" />
         <item itemvalue="Kotlin.ExceptionKt" />
-        <item itemvalue="Kotlin.IterationKt" />
       </list>
     </recent_temporary>
   </component>
