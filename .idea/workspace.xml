@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="871d1604-7fac-4921-aef5-a3e76fac96a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/User.kt" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +49,6 @@
     "Kotlin.IterationKt.executor": "Debug",
     "Kotlin.MainKt.executor": "Debug",
     "Kotlin.PersonKt.executor": "Debug",
-    "Kotlin.SealedClassKt.executor": "Debug",
     "Kotlin.UserKt.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
